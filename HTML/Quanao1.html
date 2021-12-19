@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sneaker Foots</title>
+<link href="../ảnh/anhlogo.png" rel="shortcut icon"/>
+<link href="../CSS/CSS 1.css" rel="stylesheet"/>
+<script src="../Javascript/js.js"></script>
+<link href="../CSS/animate.css" rel="stylesheet"/>
+<script src="../Javascript/wow.min.js"></script>
+<script>
+   new WOW().init();
+</script>
+<script src="../Javascript/jquery-3.4.1.min.js"></script>
+<script>
+	$(document).ready(function() {
+        $(".gototop > a").hide();
+		$(".gototop > a").click(function(){
+			$("html, body").animate({scrollTop:0}, 3000);
+		});
+		$(window).scroll(function(){
+			if($("html, body").scrollTop() > 200){
+				$(".gototop > a").fadeIn(1000);
+			}else {
+				$(".gototop > a").fadeOut("slow");
+			}			
+		});
+    });
+</script>
+</head>
+
+<body style="background-color:#F6F7F9;">
+	<div id="top" class="banhang wow fadeInDown">
+    	<div class="timkiem">
+            <input type="text" placeholder="Nhập từ khóa..." onChange="timKiem(this)" />
+        	<img src="../ảnh/timkiem.png"/>
+        </div>
+        <div class="giohang">
+        	<img src="../ảnh/giohang.png"/>
+        </div>
+        <div class="chuyentrang">
+        	<a href="https://www.facebook.com/"><img src="../ảnh/chuyentrang.png"/></a>
+        </div>
+    </div>
+    <div class="anhlogo wow zoomInRight">
+    	<a href="Trangchu.html"><img src="../ảnh/anhlogo.png"/></a>
+    </div>
+    <div class="body">
+    	<div class="menu wow fadeInRight">
+        	<ul>
+            	<li><a href="Trangchu.html">TRANG CHỦ</a></li>
+                <li><a href="Tintuc.html">TIN TỨC</a></li>
+                <li><a href="Sneaker Foot 1.html">GIÀY CHÍNH HÃNG</a></li>
+            </ul>
+    	</div>
+    </div>
+    <div class="menu">
+    	<div class="menuhang1 wow fadeInLeft">
+        	<ul>
+            	<li><a href="Nike.html">NIKE</a></li>
+                <li><a href="Adidas.html">ADIDAS</a></li>
+                <li><a href="Converse.html">CONVERSE</a></li>
+                <li><a href="Asics.html">ASICS</a></li>
+            </ul>
+        </div>
+        <div class="menuhang2 wow fadeInRight">
+        	<ul>
+            	<li><a href="Vans.html">VANS</a></li>
+                <li><a href="Fila.html">FILA</a></li>
+                <li><a href="Levis.html">LEVIS</a></li>
+                <li><a href="McQueen.html">MC QUEEN</a></li>
+                <li><a href="Gucci.html">GUCCI</a></li>
+            </ul>
+        </div>
+        <div class="menuhang3 wow fadeInLeft">
+        	<ul>
+            	<li><a href="Jordan.html">JORDAN</a></li>
+                <li><a href="Midaz.html">MIDAZ</a></li>
+                <li><a href="Quanao1.html">QUẦN ÁO</a></li>
+                <li><a href="Phukien.html">PHỤ KIỆN</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="banner wow fadeInUp">
+    	<img src="../banner/banner 1.png" id="Banner"/>
+        <div class="leftbanner">
+        	<button onClick="chuyenBanner1()"><img src="../ảnh/arrow_left.png"/></button>
+        </div>
+        <div class="rightbanner">
+        	<button onClick="chuyenBanner2()"><img src="../ảnh/arrow_right.png"/></button>
+        </div>
+    </div>
+    <div class="body1">
+        	<div class="item  wow fadeInDown">
+            	<a href="1p1.html">
+                    <img src="../quanao/1p1h1.jpeg"/>
+                    <p>Áo Nike Jacket Red /White LOGO 2019**</p>
+                    <p><b>Giá: </b>880,000 vnd</p>
+                </a>
+            </div>
+        	<div class="item wow fadeInLeft">
+                <a href="2p1.html">
+                    <img src="../quanao/2p1h1.jpeg"/>
+                    <p>Hàng Chính Hãng Áo Nike Jacket Black/White LOGO 2019**</p>
+                    <p><b>Giá: </b>880,000 đ</p>
+                </a>
+            </div>
+            <div class="item wow fadeInRight">
+                <a href="3p1.html">
+                    <img src="../quanao/3p1h1.jpeg"/>
+                    <p>Hàng Chính Hãng Áo Khoác Bomber New York Black 2019**</p>
+                    <p><b>Giá: </b>880,000 đ</p>
+                </a>
+            </div>
+        	<div class="item wow fadeInUp">
+                <a href="4p1.html">
+                    <img src="../quanao/4p1h1.jpeg"/>
+                    <p>Hàng Chính Hãng * Hotdeal Áo Thun American Eagle Orange Ombre</p>
+                    <p><b>Giá: </b>280,000 đ</p>
+                </a>
+            </div>
+        	<div class="item wow fadeInDown">
+                <a href="5p1.html">
+                    <img src="../quanao/5p1h1.jpeg"/>
+                    <p>Hàng Chính Hãng Áo Khoác Bomber New York Olive 2019**</p>
+                    <p><b>Giá: </b>880,000 đ</p>
+                </a>
+            </div>
+        	<div class="item wow fadeInLeft">
+                <a href="6p1.html">
+                    <img src="../quanao/6p1h1.jpeg"/>
+                    <p>Hàng Chính Hãng Áo Thun H&M Metallica White * 2019 *</p>
+                    <p><b>Giá: </b>380,000 đ</p>
+                </a>
+            </div>
+            <div class="item wow fadeInRight">
+                <a href="7p1.html">
+                    <img src="../quanao/7p1h1.jpeg"/>
+                    <p>Hàng Chính Hãng Áo Thun Levis Striped White/Red 2019**</p>
+                    <p><b>Giá: </b>280,000 đ</p>
+                </a>
+            </div>
+        	<div class="item wow fadeInUp">
+                <a href="8p1.html">
+                    <img src="../quanao/8p1h1.jpeg"/>
+                    <p>Hàng Chính Hãng Áo Thun Culture 10 White/Blue LOGO 2019**</p>
+                    <p><b>Giá: </b>280,000 đ</p>
+                </a>
+            </div>
+        	<div class="item wow fadeInDown">
+                <a href="9p1.html">
+                    <img src="../quanao/9p1h1.jpeg"/>
+                    <p>Hàng Chính Hãng Áo Thun Headgear Classics Memphis Red Sox</p>
+                    <p><b>Giá: </b>380,000 đ</p>
+                </a>
+            </div>
+        	<div class="item wow fadeInLeft">
+                <a href="10p1.html">
+                    <img src="../quanao/10p1h1.jpeg"/>
+                    <p>Hàng Chính Hãng Áo Thun Headgear Classics Memphis Red Sox</p>
+                    <p><b>Giá: </b>380,000 đ</p>
+                </a>
+            </div>
+            <div class="item wow fadeInRight">
+                <a href="11p1.html">
+                    <img src="../quanao/11p1h1.jpeg"/>
+                    <p>Hàng Chính Hãng Áo Discovery Expedition Black/Logo **2019**</p>
+                    <p><b>Giá: </b>200,000 đ</p>
+               	</a>
+            </div>
+        	<div class="item wow fadeInUp">
+                <a href="12p1.html">
+                    <img src="../quanao/12p1h1.jpeg"/>
+                    <p>**BUY 1 GET1 ** Áo Thun Russell Training Fit 2019**</p>
+                    <p><b>Giá: </b>289,000 đ</p>
+                </a>
+            </div>
+    </div>
+    <div class="chuyentrang">
+    	<ul>
+            <li><a href="Sneaker Foot 1.html">1</a></li>
+            <li><a href="Sneaker Foot 2.html">2</a></li>
+            <li><a href="Sneaker Foot 3.html">3</a></li>
+            <li><a href="Quanao1.html">4</a></li>
+            <li><a href="Quanao2.html">5</a></li>
+            <li><a href="Phukien.html">6</a></li>
+            <li><a href="#">...</a></li>
+            <li><a href="#">15</a></li>
+        </ul>
+    </div>
+    <img class="thongtinlienhe wow fadeInLeft" src="../ảnh/thong tin.png"/>
+    <div class="footer">
+    	<div class="leftfooter wow fadeInLeftBig">
+        	<img src="../ảnh/map.png"/>
+        </div>
+        <div class="rightfooter wow fadeInRightBig">
+        	<h4>Địa chỉ</h4>
+            Chi nhánh chính: 105 Bùi Đình Túy, phường 24, quận Bình Thạnh.<br/>
+            Chi nhánh phụ: 477 Nguyễn Văn Công, phường 3, quận Gò Vấp.<br/>
+            Hotline 1: <span style="color:red;">0933603196</span><br/>
+            Hotline 2: <span style="color:red;">0397041295</span><br/>
+            Facebook: <a href="https://www.facebook.com/letran.anhkhoa.92">https://www.facebook.com/letran.anhkhoa.92</a><br/>
+            Giờ mở cửa: Mở cửa suốt tuần từ 9h đến 22h.<br/>
+            Tình trạng: <span style="color:green"><b>Đang mở cửa</b></span>.
+            <h4>Tài khoản ngân hàng</h4>
+            Vietcombank Lê Trần Anh Khoa <b>0421000526186</b> chi nhánh Sài Gòn.<br/>
+            NamABank Nguyễn Vũ Minh Hoàng <b>100047488600001</b> chi nhánh Gò Vấp.
+        </div>
+    </div>
+    <div class="category">
+    	<div class="leftcate wow fadeInDown">
+        	<h3>Danh Mục</h3>
+            <ul>
+            	<li><a href="Trangchu.html">Trang chủ</a></li>
+                <li><a href="Tuyendung.html">Tuyển dụng</a></li>
+                <li><a href="Sneaker Foot 1.html">Giày chính hãng</a></li>
+            </ul>
+        </div>
+        <div class="middlecate wow fadeInUp">
+			<h3>Thương Hiệu</h3>
+            <ul>
+                <li><a href="Nike.html">Nike</a></li></li>
+                <li><a href="Adidas.html">Adidas</a></li>
+                <li><a href="Converse.html">Converse</a></li>
+                <li><a href="Asics.html">Asics</a></li>
+                <li><a href="Vans.html">Vans</a></li>
+                <li><a href="Fila.html">Fila</a></li>
+                <li><a href="Levis.html">Levis</a></li>
+                <li><a href="McQueen.html">MC Queen</a></li>
+                <li><a href="Gucci.html">Gucci</a></li>
+                <li><a href="Jordan.html">Jordan</a></li>
+                <li><a href="Midaz.html">Midaz</a></li>
+                <li><a href="Quanao1.html">Quần áo</a></li>
+                <li><a href="Phukien.html">Phụ kiện</a></li>
+            </ul>
+        </div>
+        <div class="rightcate wow fadeInDown">
+        	<h3>Tài Khoản</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/">Đăng nhập</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="gototop">
+    	<a href="#top"><img src="../ảnh/go to top.png"/></a>
+    </div>
+   <p align="center">Copy rigth: Sneaker Foot<br/>
+    	Development: <a href="mailto:1851050063khoa@ou.edu.vn">1851050063khoa@ou.edu.vn</a> <a href="mailto:1851050049hoang@ou.edu.vn">		1851050049hoang@ou.edu.vn</a> Ver 19.07.2019</p>
+</body>
+</html>

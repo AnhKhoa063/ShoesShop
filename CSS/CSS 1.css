@@ -1,0 +1,290 @@
+@charset "utf-8";
+*{
+	font-family:Tahoma, Geneva, sans-serif;
+}
+
+/* Phần logo */
+*{
+	box-sizing:border-box;
+}
+.anhlogo{
+	text-align:center;
+}
+.anhlogo > a{
+	display:inline-block;
+	width:400px;
+}
+.anhlogo img{
+	width:100%;
+}
+
+/* Phần bán hàng */
+div.banhang{
+	background-color:#CCCCCC;
+	overflow:hidden;
+	padding:5px;
+}
+div.timkiem input{
+	float:left;
+	height:32px;
+	border:1px solid #CCC;
+	border-bottom-left-radius:6px;
+	border-top-left-radius:6px;
+	padding:10px;
+}
+div.timkiem{
+	float:left;
+	margin-left:80px;
+}
+div.timkiem img{
+	height:32px;
+	border:1px solid #CCC;
+	background-color:#FFF;
+	border-bottom-right-radius:6px;
+	border-top-right-radius:6px;
+}
+div.giohang{
+	float:left;
+	margin-left:900px;
+}
+
+/* Phần menu 1*/
+div.body{
+	width:95%;
+	margin:0 auto;
+}
+div.menu{
+	width:100%;
+	overflow:hidden;
+}
+div.menu > ul{
+	padding-left:180px;
+}
+div.menu > ul > li{
+	list-style-type:none;
+	float:left;
+	margin:15px;
+	border-left:1px solid grey;
+	font-size:35px;
+	padding-left:40px;
+}
+div.menu > ul > li > a{
+	text-decoration:none;
+}
+div.menu > ul > li:first-child{
+	border-left:none;
+}
+div.menu ul li a{
+	display:block;
+	text-decoration:none;
+	color:#666;
+}
+div.menu ul li a:hover{
+	color:#F36;
+}
+
+/* Phần menu 2 */
+div.menu ul{
+	list-style-type:none;
+}
+div.menu ul li a{
+	display:block;
+	text-decoration:none;
+	color:black;
+}
+div.menu ul li a:hover{
+	color:#F06;
+}
+div.menuhang1 ul{
+	overflow:hidden;
+}
+div.menuhang1 ul li{
+	float:left;
+	margin:30px 95px;
+	font-size:35px;
+}
+div.menuhang2 ul{
+	overflow:hidden;
+}
+div.menuhang2 li{
+	float:left;
+	margin:30px 69px;
+	font-size:35px;
+}
+div.menuhang3 ul{
+	overflow:hidden;
+}
+div.menuhang3 li{
+	float:left;
+	margin:30px 88px;
+	font-size:35px;
+}
+
+/* Phần Banner */
+div.banner{
+	position:relative;
+	margin:0 auto;
+	width:95%;
+}
+div.banner > img{
+	width:100%;
+}
+div.leftbanner{
+	position:absolute;
+	top:300px;
+	opacity:0.2;
+}
+div.rightbanner{
+	position:absolute;
+	top:300px;
+	right:0;
+	opacity:0.2;
+}
+
+/* Phần body */
+div.item > a{
+	text-decoration:none;
+	color:black;
+}
+div.item > a:hover{
+	color:#F03;
+}
+div.item img:hover{
+	transform:translateY(-30px);
+	transition:transform 1s;
+}
+div.body1{
+	margin-left:2%;
+	display:flex;
+	flex-wrap: wrap;
+}
+div.item{
+	width:24%;
+	padding:10px;
+	margin:5px;
+}
+div.item p{
+	margin:0;
+	padding:10px;
+	text-align:center;
+}
+div.item img{
+	width:100%;
+	height:300px;
+}
+
+/* Phần footerr */
+img.thongtinlienhe{
+	margin-left:70px;
+	margin-bottom:50px;
+	clear:both;
+}
+div.footer{
+	width:100%;
+	overflow:hidden;
+}
+div.leftfooter{
+	float:left;
+	width:45%;
+}
+div.rightfooter{
+	width:40%;
+	float:right;
+	line-height:25px;
+}
+div.rightfooter a{
+	text-decoration:none;
+}
+div.leftfooter img{
+	width:100%;
+	margin-left:70px;
+	height:350px;
+}
+
+/* Phần category */
+div.category{
+	background-color:#232323;
+	color:white;
+	overflow:hidden;
+	margin-top:50px;
+}
+div.category h3{
+	text-align:center;
+	font-weight:700;
+	font-size:30px;
+}
+div.category ul{
+	list-style-type:none;
+	padding:0;
+	text-align:center;
+}
+div.category ul li a{
+	text-decoration:none;
+	color:white;	
+}
+div.category ul li a:hover{
+	color:#F06;
+}
+div.category ul li{
+	font-size:25px;
+	font-weight:500;
+}
+div.leftcate{
+	float:left;
+	width:28%;
+	margin-left:60px;
+}
+div.leftcate > ul > li{
+	line-height:40px;
+}
+div.middlecate{
+	float:left;
+	width:28%;
+	line-height:35px;
+	margin-left:20px;
+}
+div.middlecate li a{
+	text-align:center;
+}
+div.rightcate{
+	float:left;
+	margin-left:170px;
+}
+
+/* Phần chuyển qua trang sau */
+div.chuyentrang{
+	float:right;
+	margin-right:50px;
+}
+div.chuyentrang ul{
+	list-style-type:none;
+	overflow:hidden;
+}
+div.chuyentrang ul li{
+	float:left;
+	border:1px solid grey;
+	width: 35px;
+    height: 35px;
+    line-height: 40px;
+    text-align: center;
+}
+div.chuyentrang ul li a{
+	text-decoration:none;
+	color:red;
+	display:block;
+}
+div.chuyentrang ul li a:hover {
+	background-color:#F00;
+	color:#FFF;
+}
+div.chuyentrang ul li.active {
+	background-color:#F00;
+	color:#FFF;
+}
+/* Phần go to top */
+div.gototop{
+	position:fixed;
+	bottom:10px;
+	right:10px;
+}
+

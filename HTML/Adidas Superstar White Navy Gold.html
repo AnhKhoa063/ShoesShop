@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sneaker Foot</title>
+<link href="../ảnh/anhlogo.png" rel="shortcut icon"/>
+<link href="../CSS/CSS Prophere Black Core.css" rel="stylesheet"/>
+<script src="../Javascript/Adidas Superstar White Navy Gold.js"></script>
+<script src="../Javascript/jquery-3.4.1.min.js"></script>
+<script>
+	$(document).ready(function() {
+        $(".gototop > a").hide();
+		$(".gototop > a").click(function(){
+			$("html, body").animate({scrollTop:0}, 3000);
+		});
+		$(window).scroll(function(){
+			if($("html, body").scrollTop() > 200){
+				$(".gototop > a").fadeIn(1000);
+			}else {
+				$(".gototop > a").fadeOut("slow");
+			}			
+		});
+    });
+</script>
+</head>
+
+<body style="background-color:#F6F7F9;">
+	<div id="top" class="banhang">
+    	<div class="timkiem">
+            <input placeholder="   Tìm kiếm sản phẩm"/>
+        	<img src="../ảnh/timkiem.png"/>
+        </div>
+        <div class="giohang">
+        	<img src="../ảnh/giohang.png"/>
+        </div>
+        <div class="chuyentrang">
+        	<a href="https://www.facebook.com/"><img src="../ảnh/chuyentrang.png"/></a>
+        </div>
+    </div>
+    <div class="anhlogo">
+    	<a href="Trangchu.html"><img src="../ảnh/anhlogo.png"/></a>
+    </div>
+    <div class="body">
+    	<div class="menu">
+        	<ul>
+            	<li><a href="Trangchu.html">TRANG CHỦ</a></li>
+                <li><a href="Tintuc.html">TIN TỨC</a></li>
+                <li><a href="Sneaker Foot 1.html">GIÀY CHÍNH HÃNG</a></li>
+            </ul>
+    	</div>
+    </div>
+    <div class="menu">
+    	<div class="menuhang1">
+        	<ul>
+            	<li><a href="Nike.html">NIKE</a></li>
+                <li><a href="Adidas.html">ADIDAS</a></li>
+                <li><a href="Converse.html">CONVERSE</a></li>
+                <li><a href="Asics.html">ASICS</a></li>
+            </ul>
+        </div>
+        <div class="menuhang2">
+        	<ul>
+            	<li><a href="Vans.html">VANS</a></li>
+                <li><a href="Fila.html">FILA</a></li>
+                <li><a href="Levis.html">LEVIS</a></li>
+                <li><a href="McQueen.html">MC QUEEN</a></li>
+                <li><a href="Gucci.html">GUCCI</a></li>
+            </ul>
+        </div>
+        <div class="menuhang3">
+        	<ul>
+            	<li><a href="Jordan.html">JORDAN</a></li>
+                <li><a href="Midaz.html">MIDAZ</a></li>
+                <li><a href="Quanao1.html">QUẦN ÁO</a></li>
+                <li><a href="Phukien.html">PHỤ KIỆN</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="khungtrang">
+    	<div class="nameSP">
+    		<h3>Adidas Superstar White Navy Gold</h3>
+   		 </div> 
+    	<div class="left">
+        	<img src="../Sneaker/Adidas Superstar White/giay1.png" id="Banner"/>
+            <div class="leftbanner">
+        		<button onClick="chuyenBanner1()"><img src="../ảnh/arrow_left.png"/></button>
+        	</div>
+       		<div class="rightbanner">
+        		<button onClick="chuyenBanner2()"><img src="../ảnh/arrow_right.png"/></button>
+        	</div>
+            <div class="thumb">
+                <img src="../Sneaker/Adidas Superstar White/giay1.png" onClick="change(this)" onMouseOver="change(this)"/>
+                <img src="../Sneaker/Adidas Superstar White/giay2.png" onClick="change(this)" onMouseOver="change(this)"/>
+                <img src="../Sneaker/Adidas Superstar White/giay3.png" onClick="change(this)" onMouseOver="change(this)"/>
+                <img src="../Sneaker/Adidas Superstar White/giay4.png" onClick="change(this)" onMouseOver="change(this)"/>
+                <img src="../Sneaker/Adidas Superstar White/giay5.png" onClick="change(this)" onMouseOver="change(this)"/>
+            </div>
+        </div>
+        <div class="right">
+        	<h1>Adidas Superstar White Navy Gold</h1>
+            <p><b>Mã sản phẩm: 2163</b></p>
+            <p><b>Giá:</b> <span>1,700,000 VNĐ</span></p>
+            <p><b>Size:</b> 36 - 42</p>
+            <button class="Share">
+            	<img src="../ảnh/facebook.png"/> Share 
+            </button><br/>
+            <a href="Sneaker Foot 1.html"><button class="Change">
+            	Chưa vừa ý. Đổi đôi khác ???
+            </button><br/></a>
+            <a href="https://www.facebook.com/messages/t/letran.anhkhoa.92"><button class="Request">
+            	<img src="../ảnh/facebook.png"/> Nhận Tư Vấn Miễn Phí
+            </button></a>
+            <hr>
+            <h3>Size:</h3>
+            <button onClick="chonSize(36)" id="36" class="size active">36</button>
+            <button onClick="chonSize(37)" id="37" class="size">37</button>
+            <button onClick="chonSize(38)" id="38" class="size">38</button>
+            <button onClick="chonSize(39)" id="39" class="size">39</button>
+            <button onClick="chonSize(40)" id="40" class="size">40</button>
+            <button onClick="chonSize(41)" id="41" class="size">41</button>
+            <button onClick="chonSize(42)" id="42" class="size">42</button>
+            <h3>Số lượng</h3>
+            <input   onChange="tinhTien()" id="num" type="number" min="1" max="100" step="1" value="0"/>
+            <h3>Tổng tiền</h3>
+            <div id="tien">0 VNĐ</div>
+            
+        </div>
+        <div class="Describe">
+    		<h3>Mô tả sản phẩm</h3>
+            <p>Dòng super star với phiên bản kỉ niệm cải tiến chất da cao cấp hơn. Form đẹp chất liệu tân tiến.</p>
+            <p>Dòng giày thịnh nhất 2015 bao hàng xịn 100% giả đền gấp 3 tiền form giày dễ mang dễ phối đồ.</p>
+            <p>Là phối màu mới nhất năm nay. Mẫu giày dễ vệ sinh upper thông thoáng.</p>
+			<p>Form giày thời trang cực kì dễ mang dễ phối đồ. thích hợp dễ dàng khi mix với các quần áo khác đi kèm. Là phối màu mới nhất của năm.</p> 
+			<p>Cam kết hàng chính hãng 100% bao check bao test.</p>
+			<p>Được bảo hành 1 năm với chế độ của giày.</p>
+
+			<p>~~~~~~~~~~~~~<br/>
+				Hãy gọi ngay cho shop để dc tư vấn nhé</p>
+			<p>Gọi ngay cho 0933603196 - 0397041295</p>
+    	</div>
+        <form autocomplete="off">
+            <div class="Thanhtoan">
+                <h3>Thông tin khách hàng</h3>
+                <div>
+                    <p>Tên người nhận:</p>
+                    <input placeholder="Họ và tên khách hàng..." required id="name1"/>
+                    <p>Số điện thoại:</p>
+                    <input placeholder="Số điện thoại..." required id="name2"/>
+                    <p>Nhập lại số điện thoại:</p>
+                    <input placeholder="Nhập lại số điện thoại..." required id="name1"/>
+                    <p>Địa chỉ:</p>
+                    <input placeholder="Địa chỉ..." required id="name3"/>
+                    <p>Email:</p>
+                    <input type="email" placeholder="Email..." required id="name4"/>
+                    <p>Ghi chú:</p>
+                    <textarea rows="6" cols="45" id="name5"></textarea>
+                    <br/>
+                    <button onClick="thanhtoan()" type="submit" id="button">Thanh toán</button>
+                </div>
+            </div>
+      	</form>
+    </div>
+    
+    <img class="thongtinlienhe" src="../ảnh/thong tin.png"/>
+    <div class="footer">
+    	<div class="leftfooter">
+        	<img src="../ảnh/map.png"/>
+        </div>
+        <div class="rightfooter">
+        	<h4>Địa chỉ</h4>
+            Chi nhánh chính: 105 Bùi Đình Túy, phường 24, quận Bình Thạnh.<br/>
+            Chi nhánh phụ: 477 Nguyễn Văn Công, phường 3, quận Gò Vấp.<br/>
+            Hotline 1: <span style="color:red;">0933603196</span><br/>
+            Hotline 2: <span style="color:red;">0397041295</span><br/>
+            Facebook: <a href="https://www.facebook.com/letran.anhkhoa.92">https://www.facebook.com/letran.anhkhoa.92</a><br/>
+            Giờ mở cửa: Mở cửa suốt tuần từ 9h đến 22h.<br/>
+            Tình trạng: <span style="color:green"><b>Đang mở cửa</b></span>.
+            <h4>Tài khoản ngân hàng</h4>
+            Vietcombank Lê Trần Anh Khoa <b>0421000526186</b> chi nhánh Sài Gòn.<br/>
+            NamABank Nguyễn Vũ Minh Hoàng <b>100047488600001</b> chi nhánh Gò Vấp.
+        </div>
+    </div>
+    <div class="category">
+    	<div class="leftcate">
+        	<h3>Danh Mục</h3>
+            <ul>
+            	<li><a href="Trangchu.html">Trang chủ</a></li>
+                <li><a href="Tuyendung.html">Tuyển dụng</a></li>
+                <li><a href="Sneaker Foot 1.html">Giày chính hãng</a></li>
+            </ul>
+        </div>
+        <div class="middlecate">
+			<h3>Thương Hiệu</h3>
+            <ul>
+                <li><a href="Nike.html">Nike</a></li></li>
+                <li><a href="Adidas.html">Adidas</a></li>
+                <li><a href="Converse.html">Converse</a></li>
+                <li><a href="Asics.html">Asics</a></li>
+                <li><a href="Vans.html">Vans</a></li>
+                <li><a href="Fila.html">Fila</a></li>
+                <li><a href="Levis.html">Levis</a></li>
+                <li><a href="McQueen.html">MC Queen</a></li>
+                <li><a href="Gucci.html">Gucci</a></li>
+                <li><a href="Jordan.html">Jordan</a></li>
+                <li><a href="Midaz.html">Midaz</a></li>
+                <li><a href="Quanao1.html">Quần áo</a></li>
+                <li><a href="Phukien.html">Phụ kiện</a></li>
+            </ul>
+        </div>
+        <div class="rightcate">
+        	<h3>Tài Khoản</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/">Đăng nhập</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="gototop">
+    	<a href="#top"><img src="../ảnh/go to top.png"/></a>
+    </div>
+   <p align="center">Copy rigth: Sneaker Foot<br/>
+    	Development: <a href="mailto:1851050063khoa@ou.edu.vn">1851050063khoa@ou.edu.vn</a> <a href="mailto:1851050049hoang@ou.edu.vn">		1851050049hoang@ou.edu.vn</a> Ver 19.07.2019</p>
+</body>
+</html>

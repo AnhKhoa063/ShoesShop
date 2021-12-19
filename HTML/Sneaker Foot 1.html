@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sneaker Foots</title>
+<link href="../ảnh/anhlogo.png" rel="shortcut icon"/>
+<link href="../CSS/CSS 1.css" rel="stylesheet"/>
+<script src="../Javascript/js.js"></script>
+<link href="../CSS/animate.css" rel="stylesheet"/>
+<script src="../Javascript/wow.min.js"></script>
+<script>
+   new WOW().init();
+</script>
+<script src="../Javascript/jquery-3.4.1.min.js"></script>
+<script>
+	$(document).ready(function() {
+        $(".gototop > a").hide();
+		$(".gototop > a").click(function(){
+			$("html, body").animate({scrollTop:0}, 3000);
+		});
+		$(window).scroll(function(){
+			if($("html, body").scrollTop() > 200){
+				$(".gototop > a").fadeIn(1000);
+			}else {
+				$(".gototop > a").fadeOut("slow");
+			}			
+		});
+    });
+</script>
+</head>
+
+<body style="background-color:#F6F7F9;">
+	<div id="top" class="banhang wow fadeInDown">
+    	<div class="timkiem">
+            <input type="text" placeholder="Nhập từ khóa..." onChange="timKiem(this)" />
+        	<img src="../ảnh/timkiem.png"/>
+        </div>
+        <div class="giohang">
+        	<img src="../ảnh/giohang.png"/>
+        </div>
+        <div class="chuyentrang">
+        	<a href="https://www.facebook.com/"><img src="../ảnh/chuyentrang.png"/></a>
+        </div>
+    </div>
+    <div class="anhlogo wow zoomInRight">
+    	<a href="Trangchu.html"><img src="../ảnh/anhlogo.png"/></a>
+    </div>
+    <div class="body">
+    	<div class="menu wow fadeInRight">
+        	<ul>
+            	<li><a href="Trangchu.html">TRANG CHỦ</a></li>
+                <li><a href="Tintuc.html">TIN TỨC</a></li>
+                <li><a href="Sneaker Foot 1.html">GIÀY CHÍNH HÃNG</a></li>
+            </ul>
+    	</div>
+    </div>
+    <div class="menu">
+    	<div class="menuhang1 wow fadeInLeft">
+        	<ul>
+            	<li><a href="Nike.html">NIKE</a></li>
+                <li><a href="Adidas.html">ADIDAS</a></li>
+                <li><a href="Converse.html">CONVERSE</a></li>
+                <li><a href="Asics.html">ASICS</a></li>
+            </ul>
+        </div>
+        <div class="menuhang2 wow fadeInRight">
+        	<ul>
+            	<li><a href="Vans.html">VANS</a></li>
+                <li><a href="Fila.html">FILA</a></li>
+                <li><a href="Levis.html">LEVIS</a></li>
+                <li><a href="McQueen.html">MC QUEEN</a></li>
+                <li><a href="Gucci.html">GUCCI</a></li>
+            </ul>
+        </div>
+        <div class="menuhang3 wow fadeInLeft">
+        	<ul>
+            	<li><a href="Jordan.html">JORDAN</a></li>
+                <li><a href="Midaz.html">MIDAZ</a></li>
+                <li><a href="Quanao1.html">QUẦN ÁO</a></li>
+                <li><a href="Phukien.html">PHỤ KIỆN</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="banner wow fadeInUp">
+    	<img src="../banner/banner 1.png" id="Banner"/>
+        <div class="leftbanner">
+        	<button onClick="chuyenBanner1()"><img src="../ảnh/arrow_left.png"/></button>
+        </div>
+        <div class="rightbanner">
+        	<button onClick="chuyenBanner2()"><img src="../ảnh/arrow_right.png"/></button>
+        </div>
+    </div>
+    <div class="body1">
+            <div class="item wow fadeInLeftBig">
+                <a href="FILA DISRUPTOR 2 ALL BLACKK.html">
+                    <img src="../logo/d2.png"/>
+                    <p>FILA DISRUPTOR 2 ALL BLACKK</p>
+                    <p><b>Giá: </b>2,400,000</p>
+                </a>
+            </div>
+            <div class="item wow fadeInDownBig">
+                <a href="Alpha Bounce Beyond Core Black.html">
+                    <img src="../logo/b1.png"/>
+                    <p>Alpha Bounce Beyond Core Black</p>
+                    <p><b>Giá: </b>1,750,000</p>
+                </a>
+            </div>
+            <div class="item wow fadeInRightBig">
+                <a href="Adidas Superstar White Navy Gold.html">
+                    <img src="../logo/c1.png"/>
+                    <p>Adidas Superstar White Navy Gold</p>
+                    <p><b>Giá: </b>1,700,000</p>
+                </a>
+            </div>
+            <div class="item wow fadeInUpBig">
+            	<a href="Triple White NEW ARIVAL.html">
+                    <img src="../logo/d1.png"/>
+                    <p>Triple White NEW ARIVAL</p>
+                    <p><b>Giá: </b>1,250,000</p>
+                </a>
+            </div>
+        	<div class="item wow fadeInLeftBig">
+            	<a href="Alpha Bounce Instinc While Black.html">
+                    <img src="../logo/e1.png"/>
+                    <p>Alpha Bounce Instinc While Black</p>
+                    <p><b>Giá: </b>2,300,000</p>
+                </a>
+            </div>
+        	<div class="item wow fadeInDownBig">
+            	<a href="Adidas Stan Smith White-Green.html">
+                    <img src="../logo/f1.png"/>
+                    <p>Adidas Stan Smith White-Green</p>
+                    <p><b>Giá: </b>1,650,000</p>
+                </a>
+            </div>
+            <div class="item wow fadeInRightBig">
+            	<a href="Chuck Taylor 70s “Iridescent”.html">
+                    <img src="../logo/g1.png"/>
+                    <p>Chuck Taylor 70s “Iridescent”</p>
+                    <p><b>Giá: </b>2,200,000</p>
+                </a>
+            </div>
+        	<div class="item wow fadeInUpBig">
+            	<a href="Ultra Boost Triple White.html">
+                    <img src="../logo/h1.png"/>
+                    <p>Ultra Boost 4.0 Triple White</p>
+                    <p><b>Giá: </b>3,300,000</p>
+                </a>
+            </div>
+        	<div class="item wow fadeInLeftBig">
+            	<a href="Ultra Boost Triple Black.html">
+                    <img src="../logo/i1.png"/>
+                    <p>Ultra Boost 4.0 Triple Black</p>
+                    <p><b>Giá: </b>3,300,000</p>
+                </a>
+            </div>
+        	<div class="item wow fadeInDownBig">
+            	<a href="Yeezy Boost 350 V2 ZEBRA.html">
+                    <img src="../logo/j1.png"/>
+                    <p>Yeezy Boost 350 V2 "ZEBRA"</p>
+                    <p><b>Giá: </b>9,932,000</p>
+                </a>
+            </div>
+            <div class="item wow fadeInRightBig">
+                    <a href="Ultra Boost 19 Shoe.html">
+                        <img src="../logo/l1.png"/>
+                        <p>Ultra Boost 19 Shoe</p>
+                        <p><b>Giá: </b>3,730,000</p>
+                    </a>
+            </div>
+            <div class="item wow fadeInUpBig">
+                <a href="Chuck Taylor All Star Limo Low Top.html">
+                    <img src="../logo/m1.png"/>
+                    <p>Chuck Taylor All Star Limo Low Top</p>
+                    <p><b>Giá: </b>1,600,000</p>
+                </a>
+            </div>           
+    </div>
+    <div class="chuyentrang">
+    	<ul>
+            <li><a href="Sneaker Foot 1.html">1</a></li>
+            <li><a href="Sneaker Foot 2.html">2</a></li>
+            <li><a href="Sneaker Foot 3.html">3</a></li>
+            <li><a href="Quanao1.html">4</a></li>
+            <li><a href="Quanao2.html">5</a></li>
+            <li><a href="Phukien.html">6</a></li>
+            <li><a href="#">...</a></li>
+            <li><a href="#">15</a></li>
+        </ul>
+    </div>
+    <img class="thongtinlienhe wow fadeInLeft" src="../ảnh/thong tin.png"/>
+    <div class="footer">
+    	<div class="leftfooter wow fadeInLeftBig">
+        	<img src="../ảnh/map.png"/>
+        </div>
+        <div class="rightfooter wow fadeInRightBig">
+        	<h4>Địa chỉ</h4>
+            Chi nhánh chính: 105 Bùi Đình Túy, phường 24, quận Bình Thạnh.<br/>
+            Chi nhánh phụ: 477 Nguyễn Văn Công, phường 3, quận Gò Vấp.<br/>
+            Hotline 1: <span style="color:red;">0933603196</span><br/>
+            Hotline 2: <span style="color:red;">0397041295</span><br/>
+            Facebook: <a href="https://www.facebook.com/letran.anhkhoa.92">https://www.facebook.com/letran.anhkhoa.92</a><br/>
+            Giờ mở cửa: Mở cửa suốt tuần từ 9h đến 22h.<br/>
+            Tình trạng: <span style="color:green"><b>Đang mở cửa</b></span>.
+            <h4>Tài khoản ngân hàng</h4>
+            Vietcombank Lê Trần Anh Khoa <b>0421000526186</b> chi nhánh Sài Gòn.<br/>
+            NamABank Nguyễn Vũ Minh Hoàng <b>100047488600001</b> chi nhánh Gò Vấp.
+        </div>
+    </div>
+    <div class="category">
+    	<div class="leftcate wow fadeInDown">
+        	<h3>Danh Mục</h3>
+            <ul>
+            	<li><a href="Trangchu.html">Trang chủ</a></li>
+                <li><a href="Tuyendung.html">Tuyển dụng</a></li>
+                <li><a href="Sneaker Foot 1.html">Giày chính hãng</a></li>
+            </ul>
+        </div>
+        <div class="middlecate wow fadeInUp">
+			<h3>Thương Hiệu</h3>
+            <ul>
+                <li><a href="Nike.html">Nike</a></li></li>
+                <li><a href="Adidas.html">Adidas</a></li>
+                <li><a href="Converse.html">Converse</a></li>
+                <li><a href="Asics.html">Asics</a></li>
+                <li><a href="Vans.html">Vans</a></li>
+                <li><a href="Fila.html">Fila</a></li>
+                <li><a href="Levis.html">Levis</a></li>
+                <li><a href="McQueen.html">MC Queen</a></li>
+                <li><a href="Gucci.html">Gucci</a></li>
+                <li><a href="Jordan.html">Jordan</a></li>
+                <li><a href="Midaz.html">Midaz</a></li>
+                <li><a href="Quanao1.html">Quần áo</a></li>
+                <li><a href="Phukien.html">Phụ kiện</a></li>
+            </ul>
+        </div>
+        <div class="rightcate wow fadeInDown">
+        	<h3>Tài Khoản</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/">Đăng nhập</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="gototop">
+    	<a href="#top"><img src="../ảnh/go to top.png"/></a>
+    </div>
+   <p align="center">Copy rigth: Sneaker Foot<br/>
+    	Development: <a href="mailto:1851050063khoa@ou.edu.vn">1851050063khoa@ou.edu.vn</a> <a href="mailto:1851050049hoang@ou.edu.vn">		1851050049hoang@ou.edu.vn</a> Ver 19.07.2019</p>
+</body>
+</html>

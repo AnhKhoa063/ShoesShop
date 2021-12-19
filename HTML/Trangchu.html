@@ -1,0 +1,399 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sneaker Foot | Trang chủ</title>
+<link href="../ảnh/anhlogo.png" rel="shortcut icon"/>
+<link href="../CSS/Trangchu.css" rel="stylesheet"/>
+<link href="../fontawesome-free-5.9.0-web/css/all.min.css" rel="stylesheet"/>
+<script src="../Javascript/Trangchu.js"></script>
+<link href="../CSS/animate.css" rel="stylesheet"/>
+<script src="../Javascript/wow.min.js"></script>
+<script src="../Javascript/jquery-3.4.1.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$(".load").delay(1200).fadeOut(function(){
+			$("body").removeClass("preloading");
+		});
+        $(".gototop > a").hide();
+		$(".gototop > a").click(function(){
+			$("html, body").animate({scrollTop:0}, 3000);
+		});
+		$(window).scroll(function(){
+			if($("html, body").scrollTop() > 500){
+				$(".gototop > a").fadeIn(1000);
+			}else {
+				$(".gototop > a").fadeOut("slow");
+			}			
+		});
+    });
+</script>
+<script>
+   new WOW().init();
+</script>
+<link rel="stylesheet" href="../CSS/owl.carousel.min.css">
+<link rel="stylesheet" href="../CSS/owl.theme.default.min.css">
+<script src="../Javascript/jquery-3.4.1.min.js"></script>
+<script src="../Javascript/owl.carousel.min.js"></script>
+</head>
+
+<body class="preloading">
+	<div class="load">
+    	<img src="../ảnh/anhdong.gif"/>
+    </div>
+	<div id="top" class="banhang wow fadeInDown">
+    	<div class="timkiem">
+            <input placeholder="Tìm kiếm sản phẩm"/>
+        	<img src="../ảnh/timkiem.png"/>
+        </div>
+        <div class="giohang">
+        	<img src="../ảnh/giohang.png"/>
+        </div>
+        <div class="chuyentrang">
+        	<a href="https://www.facebook.com/"><img src="../ảnh/chuyentrang.png"/></a>
+        </div>
+    </div>
+    <div class="anhlogo wow zoomInUp">
+    	<a href="Trangchu.html"><img src="../ảnh/anhlogo.png"/></a>
+    </div>
+    
+    <div class="body">
+    	<div class="menu wow fadeInUp">
+        	<ul>
+            	<li><a href="Trangchu.html">TRANG CHỦ</a></li>
+                <li><a href="Tintuc.html">TIN TỨC</a></li>
+                <li><a href="Sneaker Foot 1.html">GIÀY CHÍNH HÃNG</a></li>
+            </ul>
+    	</div>
+        
+        <div class="banner wow fadeInUp">
+    		<img src="../banner/banner 1.png" id="Banner"/>
+        	<div class="leftbanner">
+        		<button onClick="chuyenBanner1()"><img src="../ảnh/arrow_left.png"/></button>
+        	</div>
+        	<div class="rightbanner">
+        		<button onClick="chuyenBanner2()"><img src="../ảnh/arrow_right.png"/></button>
+        	</div>
+    	</div>
+    </div>
+    
+    <img src="../ảnh/new.png" class="title wow fadeInLeft"/>
+    <div class="tintuc">
+        <div class="tintuc1">
+        	<a href="Tintuc1.html">
+                <div class="images wow bounceInUp">
+                    <img src="../ảnh/tintuc1/1.jpeg"/>
+                </div>
+                <div class="name  wow lightSpeedIn">
+                    <p>DAD SHOES: Văn Hoá Sneaker hay chỉ là trào lưu nhất thời ?</p>
+                </div>
+            </a>
+    	</div>
+        <div class="tintuc1">
+        	<a href="Tintuc2.html">
+                <div class="images wow bounceInUp">
+                    <img src="../ảnh/tintuc2/2.jpeg"/>
+                </div>
+                <div class="name wow lightSpeedIn">
+                    <p>Luận Bàn về đế boost và cách xử ly hiệu quả</p>
+                </div>
+            </a>
+    	</div>
+    </div>
+    <div class="tintuc">
+        <div class="tintuc1">
+        	<a href="Tintuc3.html">
+                <div class="images wow bounceInUp">
+                    <img src="../ảnh/tintuc3/3.jpeg"/>
+                </div>
+                <div class="name wow lightSpeedIn">
+                    <p>Nike Air Max 97 - 20 Năm Vẫn Là Một Tượng Đài</p>
+                </div>
+            </a>
+    	</div>
+        <div class="tintuc1">
+        	<a href="Tintuc4.html">
+                <div class="images wow bounceInUp">
+                    <img src="../ảnh/tintuc4/4.jpeg"/>
+                </div>
+                <div class="name wow lightSpeedIn">
+                    <p>Dép Crocs - Sự Đơn Giản và Trường Tồn hơn 15 năm</p>
+                </div>
+            </a>
+    	</div>
+    </div>
+    <div class="tintuc">
+        <div class="tintuc1">
+        	<a href="Tintuc5.html">
+                <div class="images wow bounceInUp">
+                    <img src="../ảnh/tintuc5/5.jpeg"/>
+                </div>
+                <div class="name wow lightSpeedIn">
+                    <p>Cách Vệ Sinh Giày Bẩn Chỉ Trong Vòng 5 Phút</p>
+                </div>
+            </a>
+    	</div>
+        <div class="tintuc1">
+        	<a href="Tintuc6.html">
+                <div class="images wow bounceInUp">
+                    <img src="../ảnh/tintuc6/6.jpeg"/>
+                </div>
+                <div class="name wow lightSpeedIn">
+                    <p>SNEAKER TRẮNG VÀ CÁCH PHỐI ĐỒ “HOÀN HẢO”</p>
+                </div>
+            </a>
+    	</div>
+    </div>
+    <img src="../ảnh/sphot.png" class="title">
+    <script>
+	$(document).ready(function(){
+		$('.owl-carousel').owlCarousel({
+			stagePadding: 50,
+			loop:true,
+			margin:10,
+			nav:false,
+			slideBy:2,
+			autoplayHoverPause:true,
+			autoplay:true,
+			dotsSpeed:1000,
+			smartSpeed:1000,
+			responsive:{
+				0:{
+					items:1
+				},
+				600:{
+					items:3
+				},
+				1000:{
+					items:5
+        		}
+    		}
+		})
+	})
+	</script>
+    <div id="wp-slider">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+            	<a href="FILA DISRUPTOR 2 ALL BLACKK.html">
+                    <img src="../logo/d2.png"/>
+                    <p>FILA DISRUPTOR 2 ALL BLACKK</p>
+                    <p><b>Giá: </b>2,400,000</p>
+                </a>
+            </div>
+            <div class="item">
+            	<a href="Adidas Stan Smith White-Green.html">
+                    <img src="../logo/f1.png"/>
+                    <p>Adidas Stan Smith White-Green</p>
+                    <p><b>Giá: </b>1,650,000</p>
+                </a>
+            </div>
+            <div class="item">
+            	<a href="Ultra Boost 19 Shoe.html">
+                    <img src="../logo/l1.png"/>
+                    <p>Ultra Boost 19 Shoe</p>
+                    <p><b>Giá: </b>3,730,000</p>
+                </a>
+            </div>
+            <div class="item">
+            	<a href="Chuck Taylor All Star Boardies.html">
+                    <img src="../logo/r1.png"/>
+                    <p>Chuck Taylor All Star Boardies</p>
+                    <p><b>Giá: </b>1,400,000</p>
+                </a>
+            </div>
+            <div class="item">
+            	<a href="Off-White x Chuck 70s Just Restocked.html">
+                    <img src="../logo/z1.png"/>
+                    <p>Off-White x Chuck 70s Just Restocked</p>
+                    <p><b>Giá: </b>3,000,000</p>
+                </a>
+            </div>
+            <div class="item">
+                <a href="8p2.html">
+                    <img src="../quanao/8p2h1.jpeg"/>
+                    <p>Hàng Chính Hãng Áo Thun Boxlunch Dragon Ball Z Orange</p>
+                    <p><b>Giá: </b>480,000 đ</p>
+                </a>
+            </div>
+            <div class="item">
+                <a href="6p2.html">
+                    <img src="../quanao/6p2h1.jpeg"/>
+                    <p>Hàng Chính Hãng Áo Thun Dickies Logo White 2019**</p>
+                    <p><b>Giá: </b>280,000 đ</p>
+                </a>
+            </div>
+            <div class="item">
+                <a href="pk2.html">
+                    <img src="../phukien/2p1h1.jpeg"/>
+                    <p>**Best Seller** Q- Shine Cleaner Kit * Event * MUST HAVE</p>
+                    <p><b>Giá: </b>200,000 đ</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <img src="../ảnh/cachmuahang.png" class="title wow fadeInLeft"/>
+    <div class="cachmuahang wow fadeInUp">
+    	<ol type="1">
+        	<li>Ghé mua hàng trực tiếp tại shop và trải nghiệm các sản phẩm mới tại 105 Bùi Đình Túy, p24, quận bình thạnh.</li>
+            <li>Đối với khách hàng mua online. Vui lòng gọi để được check size giày và tư vấn lần cuối trước khi đặt hàng.</li>
+            <li>Đối với khu vực nội thành HCM, khách hàng nhận hàng và thanh toán với nhân viên giao hàng.</li>
+            <li>Đối với các tỉnh và thành phố ngoại thành, khách hàng vui lòng chuyển khoản trước theo stk :</li>
+            	<ul type="disc">
+                	<li>Vietcombank Lê Trần Anh Khoa <b>0421000526186</b> chi nhánh Sài Gòn.</li>
+                    <li>NamABank Nguyễn Vũ Minh Hoàng <b>100047488600001</b> chi nhánh Gò Vấp.</li>
+                </ul>
+            <li>Chuyển tiền xong vui lòng nhắn tin thông tin, địa chỉ, vào sdt SHOP : <span style="color:red;">0933603196</span>. Nhận được tiền shop sẽ gửi hàng trong vòng 24-> 48h.</li>
+        </ol>
+    </div>
+    
+    <img class="title wow fadeInLeft" src="../ảnh/thong tin.png"/>
+    <div class="footer">
+    	<div class="leftfooter wow fadeInLeft">
+        	<img src="../ảnh/map.png"/>
+        </div>
+        <div class="rightfooter wow fadeInRight">
+        	<h4>Địa chỉ</h4>
+            Chi nhánh chính: 105 Bùi Đình Túy, phường 24, quận Bình Thạnh.<br/>
+            Chi nhánh phụ: 477 Nguyễn Văn Công, phường 3, quận Gò Vấp.<br/>
+            Hotline 1: <span style="color:red;">0933603196</span><br/>
+            Hotline 2: <span style="color:red;">0397041295</span><br/>
+            Facebook: <a href="https://www.facebook.com/letran.anhkhoa.92">https://www.facebook.com/letran.anhkhoa.92</a><br/>
+            Giờ mở cửa: Mở cửa suốt tuần từ 9h đến 22h.<br/>
+            Tình trạng: <span style="color:green"><b>Đang mở cửa</b></span>.
+            <h4>Tài khoản ngân hàng</h4>
+            Vietcombank Lê Trần Anh Khoa <b>0421000526186</b> chi nhánh Sài Gòn.<br/>
+            NamABank Nguyễn Vũ Minh Hoàng <b>100047488600001</b> chi nhánh Gò Vấp.
+        </div>
+    </div>
+    
+    <img class="title wow fadeInLeft" src="../ảnh/comment.png"/>
+    <div class="wow fadeInRight">
+        <div class="comment">
+            <div class="user">
+                <img src="../ảnh/user_MinhHoangNguyenVu.jpg"/>
+            </div>
+            <div class="comment1">
+                <span><b><a href="https://www.facebook.com/profile.php?id=100014879910344">Minh Hoàng</a></b> Giày đẹp, đã check size, có vẻ là đồ hịn, cám ơn em trai</span><br/>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <br/><a href="#">Thích</a>
+            </div>
+        </div>
+        <div class="comment">
+            <div class="user">
+                <img src="../ảnh/user_DucBangTran.jpg"/>
+            </div>
+            <div class="comment1">
+                <span><b><a href="https://www.facebook.com/ducbangtran1510">Trần Đức Bằng</a></b> Cám ơn anh tư vấn nhiệt tình, chưa có size nên hem ủng hộ được, khi nào có size e về nhớ hú em</span><br/>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <br/><a href="#">Thích</a>
+            </div>
+        </div>
+        <div class="comment">
+            <div class="user">
+                <img src="../ảnh/user_ThienPhucNguyen.jpg"/>
+            </div>
+            <div class="comment1">
+                <span><b><a href="https://www.facebook.com/thienphuc.nguyen.16752">Thiên Phúc</a></b> Giày đẹp nhẹ, kết nhất là cái chính hãng, mua nhiều lần roài sao không giảm giá nhỉ?</span><br/>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <br/><a href="#">Thích</a>
+            </div>
+        </div>
+        <div class="comment">
+            <div class="user">
+                <img src="../ảnh/user_HoangBuuDang.jpg"/>
+            </div>
+            <div class="comment1">
+                <span><b><a href="https://www.facebook.com/danghoang.buu.9">Bửu Hoàng</a></b> Mua cho chồng tập tạ, tướng trâu bò không giày nào chịu nổi mà cả năm vẫn ko xi nhê, đúng là đồ xịn có khác, cám ơn em nghen</span><br/>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <br/><a href="#">Thích</a>
+            </div>
+        </div>
+        <div class="comment">
+            <div class="user">
+                <img src="../ảnh/user_CaoThanhDo.jpg"/>
+            </div>
+            <div class="comment1">
+                <span><b><a href="https://www.facebook.com/caothanh.do.3">Cao Thành Đỗ</a></b> Tội cho anh trai bán hàng xịn, thằng em đổi qua đổi lại mấy lần, kết nhất cái phục vụ nhiệt tình của anh trai, chúc anh trai bán đắt hehe</span><br/>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <br/><a href="#">Thích</a>
+            </div>
+        </div>
+        <div class="comment">
+            <div class="user">
+                <img src="../ảnh/user_BacGiangHuynhNguyen.jpg"/>
+            </div>
+            <div class="comment1">
+                <span><b><a href="https://www.facebook.com/huynhgianggiang9720">Giang Giang Huỳnh</a></b> Cám ơn em chủ shop, giày đẹp - xịn - nhẹ đánh cầu lông chạy bộ ok. Có nhu cầu sẽ qua mua tiếp</span><br/>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>	
+                <br/><a href="#">Thích</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="category">
+    	<div class="leftcate wow fadeInDown">
+        	<h3>Danh Mục</h3>
+            <ul>
+            	<li><a href="Trangchu.html">Trang chủ</a></li>
+                <li><a href="Tuyendung.html">Tuyển dụng</a></li>
+                <li><a href="Sneaker Foot 1.html">Giày chính hãng</a></li>
+            </ul>
+        </div>
+        <div class="middlecate wow fadeInUp">
+			<h3>Thương Hiệu</h3>
+            <ul>
+                <li><a href="Nike.html">Nike</a></li></li>
+                <li><a href="Adidas.html">Adidas</a></li>
+                <li><a href="Converse.html">Converse</a></li>
+                <li><a href="Asics.html">Asics</a></li>
+                <li><a href="Vans.html">Vans</a></li>
+                <li><a href="Fila.html">Fila</a></li>
+                <li><a href="Levis.html">Levis</a></li>
+                <li><a href="McQueen.html">MC Queen</a></li>
+                <li><a href="Gucci.html">Gucci</a></li>
+                <li><a href="Jordan.html">Jordan</a></li>
+                <li><a href="Midaz.html">Midaz</a></li>
+                <li><a href="Quanao1.html">Quần áo</a></li>
+                <li><a href="Phukien.html">Phụ kiện</a></li>
+            </ul>
+        </div>
+        <div class="rightcate wow fadeInDown">
+        	<h3>Tài Khoản</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/">Đăng nhập</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="gototop">
+    	<a href="#top"><img src="../ảnh/go to top.png"/></a>
+    </div>
+   <p align="center">Copy rigth: Sneaker Foot<br/>
+    	Development: <a href="mailto:1851050063khoa@ou.edu.vn">1851050063khoa@ou.edu.vn</a> <a href="mailto:1851050049hoang@ou.edu.vn">		1851050049hoang@ou.edu.vn</a> Ver 19.07.2019</p>
+       
+</body>
+</html>
